@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #323232;
+  background: #fff;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
@@ -66,4 +67,6 @@ header button:after {
 header button:hover:after {
   top: 0rem;
   left: 0rem;
+  border-color: #323232;
+  transition: 0.2s;
 }/*# sourceMappingURL=App.css.map */

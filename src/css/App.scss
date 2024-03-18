@@ -9,6 +9,7 @@ $accent: #f3a307;
 body {
   font-family: 'Roboto', sans-serif;
   color: $text;
+  background: $background;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
@@ -86,5 +87,7 @@ header {
     button:hover:after {
        top: 0rem;
        left: 0rem;
+       border-color: $text;
+       transition: 0.2s;
     }
 }
