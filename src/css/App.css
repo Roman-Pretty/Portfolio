@@ -1,42 +1,69 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  font-family: "Roboto", sans-serif;
+  color: #323232;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+header {
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #b0b0b0;
+  background-color: #fff;
+  padding: 1vh 10vw 1vh 10vw;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+header img {
+  width: 6rem;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.6rem;
+  gap: 2rem;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header ul li:hover {
+  color: #f3a307;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header ul .selected {
+  color: #323232;
 }
-
-.card {
-  padding: 2em;
+header ul .selected hr {
+  border: 1px solid #f3a307;
+  width: 2rem;
+  position: absolute;
 }
-
-.read-the-docs {
-  color: #888;
+header button {
+  padding: 0.75rem 3rem;
+  font-size: 1.25rem;
+  background-color: #f3a307;
+  color: #fff;
+  transform: rotate(-2deg);
+  transition: 0.4s;
 }
+header button:hover {
+  background-color: #323232;
+  color: #fff;
+  transition: 0.4s;
+  transform: translateX(1rem);
+}
+header button:active {
+  transform: translate(1rem, 1rem);
+}
+header button:after {
+  content: "";
+  position: absolute;
+  border: 0.16rem solid #f3a307;
+  bottom: 0.4rem;
+  left: 0.4rem;
+  width: 100%;
+  height: 100%;
+}
+header button:hover:after {
+  top: 0rem;
+  left: 0rem;
+}/*# sourceMappingURL=App.css.map */
