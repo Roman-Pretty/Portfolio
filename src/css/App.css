@@ -19,7 +19,7 @@ header {
   padding: 1vh 10vw 1vh 10vw;
 }
 header img {
-  width: 6rem;
+  width: 4rem;
 }
 header ul {
   display: flex;
@@ -28,26 +28,26 @@ header ul {
   gap: 2rem;
 }
 header ul li:hover {
-  color: #f3a307;
+  color: #f37e5d;
 }
 header ul .selected {
   color: #323232;
 }
 header ul .selected hr {
-  border: 1px solid #f3a307;
+  border: 1px solid #f37e5d;
   width: 2rem;
   position: absolute;
 }
 header button {
   padding: 0.75rem 3rem;
   font-size: 1.25rem;
-  background-color: #f3a307;
+  background-color: #f37e5d;
   color: #fff;
   transform: rotate(-2deg);
   transition: 0.4s;
 }
 header button:hover {
-  background-color: #323232;
+  background-color: #ef582e;
   color: #fff;
   transition: 0.4s;
   transform: translateX(1rem);
@@ -58,7 +58,7 @@ header button:active {
 header button:after {
   content: "";
   position: absolute;
-  border: 0.16rem solid #f3a307;
+  border: 0.16rem solid #f37e5d;
   bottom: 0.4rem;
   left: 0.4rem;
   width: 100%;
@@ -67,6 +67,28 @@ header button:after {
 header button:hover:after {
   top: 0rem;
   left: 0rem;
-  border-color: #323232;
+  border-color: #ef582e;
   transition: 0.2s;
+}
+
+.banner {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10vw;
+}
+.banner article {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.banner article h1 {
+  color: #323232;
+  font-size: 3rem;
+}
+.banner article p {
+  color: #7f7f7f;
 }/*# sourceMappingURL=App.css.map */
