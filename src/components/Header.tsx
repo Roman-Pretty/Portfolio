@@ -13,6 +13,7 @@ const ListItem: FC<ListItemProps> = ({ name, isSelected, href, click }) => {
         <li className={isSelected ? 'selected' : ''}>
             <a href={href} onClick={click}>{name}</a>
             {isSelected && <hr />}
+            
         </li>
     );
 };
