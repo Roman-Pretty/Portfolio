@@ -14,7 +14,6 @@ const HeaderContainer: React.FC<NavBarContainerProps> = ({ children, ...props })
         wrap="wrap"
         w="100vw"
         p={"4rem"}
-        bg={["primary.500", "primary.500", "transparent", "transparent"]}
         {...props}
       >
         {children}
